@@ -15,15 +15,14 @@
         <resolution>100.0</resolution>         
         <!-- // Number of vertical levels -->
         <vertical_levels>10</vertical_levels>          
-        
-        <!-- bathymetry -->
-        <bathymetry>
-            <filename>NEAust.nc</filename>
-            <lat_coord>lat</lat_coord>
-            <lon_coord>lon</lon_coord>
-            <field>bath</field>
-            <!--filter_bathymetry>no</filter_bathymetry-->
-        </bathymetry>
     </params>
+    <!-- bathymetry -->
+    <bathymetry>
+        <filename>NEAust.nc</filename>
+        <lat_coord>lat</lat_coord>
+        <lon_coord>lon</lon_coord>
+        <field>bath</field>
+        <!--filter_bathymetry>no</filter_bathymetry-->
+    </bathymetry>
 
 </grid>
