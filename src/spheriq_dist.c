@@ -109,7 +109,7 @@ double bearing(double lat1, double lon1, double lat2, double lon2){
     
     
     delta_lat = lat1 - lat2;
-	delta_lon = fabs(lon1 - lon2);
+	delta_lon = lon1 - lon2;
 	if (delta_lon > 2.0*M_PI) delta_lon = (2.0*M_PI) - delta_lon;
     
     dep    = cos( 0.5*(lat2+lat1) ) * delta_lon;

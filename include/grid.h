@@ -115,7 +115,7 @@ typedef struct{
     double  **dmde;
     double  **f;
     double  **h;    // bathymetry on rho grid
-
+    double  **bathymetry; 
     double  **Rx_rho;
     double  **Ry_rho;
 
@@ -162,6 +162,7 @@ typedef struct{
     int vid_el;
     int vid_f;
     int vid_h;
+    int vid_bathymetry;
     int vid_lat_rho;
     int vid_lat_psi;
     int vid_lat_u;
