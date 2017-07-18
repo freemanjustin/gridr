@@ -306,7 +306,11 @@ void write_data(e *E){
     // write h
     if ((E->retval = nc_put_var_double(E->ncid, E->vid_h, &E->h[0][0])))
         fail("put_var_ failed. Error code = %d\n",E->retval);
-    
+   
+    // write bathymetry
+    if ((E->retval = nc_put_var_double(E->ncid, E->vid_bathymetry, &E->bathymetry[0][0])))
+        fail("put_var_ failed. Error code = %d\n",E->retval);
+ 
     
     // lat_rho
     if ((E->retval = nc_put_var_double(E->ncid, E->vid_lat_rho, &E->lat_rho[0][0])))
